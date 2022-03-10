@@ -27,9 +27,9 @@
             <div class="card blog__slide text-center">
               <div class="blog__slide__img">
                 {% if post.image_url %}
-                <img class="img-fluid" src="{{ post.image_url }}" alt="">
+                <img class="img-fluid" src="{{ post.image_url }}" alt="Post image">
                 {% else %}
-                <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
+                <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Post image">
                 {% endif %}
               </div>
               <div class="blog__slide__content">
@@ -53,9 +53,9 @@
             <div class="single-recent-blog-post">
               <div class="thumb">
                 {% if post.image_url %}
-                <img class="img-fluid" src="{{ post.image_url }}" alt="">
+                <img class="img-fluid" src="{{ post.image_url }}" alt="Post image">
                 {% else %}
-                <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
+                <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Post image">
                 {% endif %}
                 <ul class="thumb-info">
                   <li><a href="{% url 'post_detail' slug=post.slug %}"><i class="ti-user"></i>{{ post.author }}</a></li>
